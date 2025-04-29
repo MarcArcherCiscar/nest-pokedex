@@ -37,7 +37,13 @@ npm run start:dev
 localhost:3000/api/v2/seed
 ```
 
-
+# Production build
+1. Crear archivo ```.env.prod```
+2. Llenar las variables de entorno de prod
+3. Crear la nueva imagen
+```
+docker-compose -f docker-compose.prod.yaml --env-file .env.prod up --build
+```
 
 ## Stack usado
 * MongoDB

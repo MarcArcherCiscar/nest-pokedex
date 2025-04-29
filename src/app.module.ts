@@ -9,6 +9,7 @@ import { CommonModule } from './common/common.module';
 import { SeedModule } from './seed/seed.module';
 import { EnvConfiguration } from './config/env.config';
 import { JoiValidationSchema } from './config/joi.validation';
+import { EntrenadoresModule } from './entrenadores/entrenadores.module';
 
 @Module({
   imports: [
@@ -24,7 +25,8 @@ import { JoiValidationSchema } from './config/joi.validation';
     }),
     CommonModule,
     PokemonModule,
-    SeedModule
+    SeedModule,
+    EntrenadoresModule
   ], 
 })
 

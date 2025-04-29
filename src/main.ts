@@ -11,15 +11,16 @@ async function main() {
     new ValidationPipe({
       whitelist: true,
       forbidNonWhitelisted: true,
-      transform: true,
-      transformOptions: {
-        enableImplicitConversion: true
-      }
+      //transform: true,
+      //transformOptions: {
+      //  enableImplicitConversion: true
+      //}
     })
   )
  
   await app.listen(process.env.PORT ?? 3000);
-  console.info(`APP RUNNING ON PORT: ${process.env.PORT ?? 3000}`)
+  console.info(`APP RUNNING ON PORT:do
+     ${process.env.PORT ?? 3000}`)
 }
 
 main();
